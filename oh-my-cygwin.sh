@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# make local disk mounts available under root
-echo "none / cygdrive binary,posix=0,user 0 0" >> /etc/fstab
-
 # install apt-cyg
 wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
 chmod +x apt-cyg
