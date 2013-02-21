@@ -21,7 +21,7 @@ cp /usr/share/vim/vim73/vimrc_example.vim ~/.vimrc
 /usr/bin/env git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]
 then
-  cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
+  cp ~/.zshrc ~/.zshrc.orig;
   rm ~/.zshrc;
 fi
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
