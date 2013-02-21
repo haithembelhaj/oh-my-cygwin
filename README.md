@@ -1,7 +1,7 @@
 # OH MY CYGWIN
 
-Looking for a real Terminal for Windows? Relax you just found it.
-This sets up a working ZSH Shell powered by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and a package manager powered by [apt-cyg](http://code.google.com/p/apt-cyg/).
+Looking for a real Terminal for Windows?
+Relax you just found it. This sets up a working ZSH Shell powered by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) and a package manager powered by [apt-cyg](http://code.google.com/p/apt-cyg/).
 
 Now you have vim, git and ssh one keystroke away under Windows :)
 
