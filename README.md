@@ -11,4 +11,5 @@ Install [cygwin](http://www.cygwin.com/) with wget then start cygwin and execute
 
 Et Voila!
 Your windows Terminal will look like this
+
 ![oh-my](https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/1297/oh-my-cygwin.PNG "OH-MY-OH-MY")
