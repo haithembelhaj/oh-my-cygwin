@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install apt-cyg
-wget http://apt-cyg.googlecode.com/svn/trunk/apt-cyg
+wget --no-check-certificate https://github.com/john-peterson/apt-cyg/raw/path/apt-cyg
 chmod +x apt-cyg
 mv apt-cyg /bin/apt-cyg
 
