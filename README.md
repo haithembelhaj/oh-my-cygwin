@@ -7,7 +7,9 @@ I took care of installing and configuring some packages so that you have vim, gi
 
 # Setup
 
-Install [cygwin](http://www.cygwin.com/) with wget (check wget in the installation process) then start cygwin and execute `wget --no-check-certificate https://raw.github.com/haithembelhaj/oh-my-cygwin/master/oh-my-cygwin.sh -O - | sh`
+Install [cygwin](http://www.cygwin.com/) with wget (check wget in the installation process) then start cygwin and execute 
+
+    wget --no-check-certificate https://raw.github.com/haithembelhaj/oh-my-cygwin/master/oh-my-cygwin.sh -O - | sh
 
 Et Voila!
 Your windows Terminal will look like this
