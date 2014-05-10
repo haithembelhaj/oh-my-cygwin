@@ -8,9 +8,6 @@ mv apt-cyg /bin/apt-cyg
 # install some stuff like vim and git
 apt-cyg install zsh mintty vim curl git openssh git-completion git-gui gitk
 
-#setting up vim
-cp /usr/share/vim/vim74/vimrc_example.vim ~/.vimrc
-
 # Create initial /etc/zshenv
 [[ ! -e /etc/zshenv ]] && echo export PATH=/usr/bin:\$PATH > /etc/zshenv
 
