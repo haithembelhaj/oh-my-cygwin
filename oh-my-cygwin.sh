@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# cd home
+cd ~
+
 SIMPLE_BACKUP_SUFFIX=".orig"
 APT_CYG="$(mktemp /tmp/apt-cyg.XXXXXXXX)"
 
