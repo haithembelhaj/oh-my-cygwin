@@ -8,7 +8,7 @@ SIMPLE_BACKUP_SUFFIX=".orig"
 APT_CYG="$(mktemp /tmp/apt-cyg.XXXXXXXX)"
 
 # install apt-cyg
-wget --no-check-certificate "https://github.com/john-peterson/apt-cyg/raw/path/apt-cyg" -O "${APT_CYG}"
+wget --no-check-certificate "https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg" -O "${APT_CYG}"
 chmod +x "${APT_CYG}"
 
 # install some stuff like vim and git
