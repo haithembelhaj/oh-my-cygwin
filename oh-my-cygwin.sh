@@ -33,6 +33,9 @@ fi
 # install apt-cyg
 install --backup "${APT_CYG}" /bin/apt-cyg
 
+# make /etc/passwd
+mkpasswd -l -p "$(cygpath -H)" > /etc/passwd
+
 # setting up zsh as default
 sed -i "s/$USER\:\/bin\/bash/$USER\:\/bin\/zsh/g" /etc/passwd
 
