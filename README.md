@@ -1,3 +1,5 @@
+# Warning: Deprecated
+
 # OH MY CYGWIN
 
 Looking for a real Terminal for Windows?
