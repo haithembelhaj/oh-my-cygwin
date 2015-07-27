@@ -20,7 +20,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 install --backup ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
-# setting up vim
+#setting up vim
 VIMRC_EXAMPLE=`find /usr/share/vim -type f -name vimrc_example.vim | head -n 1`
 if [ ! -f ~/.vimrc ] && [ -n "${VIMRC_EXAMPLE}" ]
 then
@@ -32,3 +32,6 @@ install --backup "${APT_CYG}" /bin/apt-cyg
 
 # setting zsh as the default shell
 setx SHELL /bin/zsh
+
+# et voila just start it
+/usr/bin/env zsh
