@@ -1,16 +1,15 @@
 #!/bin/bash
 set -e
 
-SIMPLE_BACKUP_SUFFIX=".orig"
-APT_CYG="$(mktemp /tmp/apt-cyg.XXXXXXXX)"
-
 # install apt-cyg
+APT_CYG="$(mktemp /tmp/apt-cyg.XXXXXXXX)"
 wget --no-check-certificate "https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg" -O "${APT_CYG}"
 chmod +x "${APT_CYG}"
+install --backup "${APT_CYG}" /bin/apt-cyg
+APT_CYG=/bin/apt-cyg
 
 # install some stuff like vim and git
 "${APT_CYG}" install zsh mintty vim curl git openssh git-completion git-gui gitk
-
 
 # install OH MY ZSH
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
@@ -26,9 +25,6 @@ if [ ! -f ~/.vimrc ] && [ -n "${VIMRC_EXAMPLE}" ]
 then
   install "${VIMRC_EXAMPLE}" ~/.vimrc
 fi
-
-# install apt-cyg
-install --backup "${APT_CYG}" /bin/apt-cyg
 
 # setting zsh as the default shell
 setx SHELL /bin/zsh
